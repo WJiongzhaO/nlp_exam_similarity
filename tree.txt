@@ -1,0 +1,38 @@
+nlp_exam_similarity/
+├── .venv/                   # Python虚拟环境
+├── logs/                    # 系统日志目录
+├── temp/                    # 临时文件目录
+├── src/                     # 源代码
+│   ├── data_processing/
+│   │   ├── __init__.py
+│   │   └── data_cleaner.py
+│   ├── model_vector/
+│   │   ├── __init__.py
+│   │   ├── models/          # 预训练模型存储目录
+│   │   │   ├──bert-base-chinese/
+│   │   │   │  ├──config.json
+│   │   │   │  ├──pytorch_model.bin
+│   │   │   │  ├──tokenizer_config.json
+│   │   │   │  └──vocab.txt
+│   │   │   ├──bge-small-zh/
+│   │   │   │  ├──config.json
+│   │   │   │  ├──pytorch_model.bin
+│   │   │   │  ├──special_tokens_map.json
+│   │   │   │  ├──tokenizer.json
+│   │   │   │  └──tokenizer_config.json
+│   │   │   └──paraphrase-multilingual-MiniLM-L12-v2/
+│   │   │      ├──1_Pooling/
+│   │   │      │  └──config.json
+│   │   │      ├──config.json
+│   │   │      ├──modules.json
+│   │   │      ├──pytorch_model.bin
+│   │   │      ├──sentence_bert_config.json
+│   │   │      ├──tokenizer.json
+│   │   │      └──tokenizer_config.json
+│   │   ├── vectorizer.py
+│   │   ├── paper_vectorizer.py
+│   │   └── similarity_calculator.py
+
+│   ├── utils.py
+│   └── gui_tkinter.py       # Tkinter可视化界面
+└── tree.txt                # 项目文件树
